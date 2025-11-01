@@ -15,7 +15,7 @@ const ProductList = () => {
   ];
 
   const handleAddToCart = product => {
-    dispatch(addItemToCart(product));// Add product to cart
+    dispatch(addItemToCart(product));
   };
 
   return (
@@ -28,7 +28,7 @@ const ProductList = () => {
             <button
   className={`add-to-cart-btn ${cartItems.some(item => item.id === product.id) ? 'disabled' : ''}`}
   onClick={() => handleAddToCart(product)}
-  disabled={cartItems.some(item => item.id === product.id)} // Disable if already in cart
+  disabled={cartItems.some(item => item.id === product.id)} 
 >
   {cartItems.some(item => item.id === product.id) ? 'Added' : 'Add to Cart'}
 </button>
