@@ -1,12 +1,12 @@
 import React from 'react';
 import './ProductList.css'; 
 import { useDispatch, useSelector } from 'react-redux';
-import { addItemToCart } from './CartSlice';// Action to add product to cart
+import { addItemToCart } from './CartSlice';
 
 
 const ProductList = () => {
     const dispatch = useDispatch();
-    const cartItems = useSelector(state => state.cart.cartItems); // Get cart items globally
+    const cartItems = useSelector(state => state.cart.cartItems);
 
   const products = [
     { id: 1, name: 'Product A', price: 60 },

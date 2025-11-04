@@ -40,6 +40,8 @@ const ShoppingCart = () => {
           ))}
       </ul>
       <button className="clear-cart-btn" onClick={() => handleClearCart()}>Clear Cart</button>
+      <div className="cart-items">The total amount is ${totalAmount}</div>
+    
     </div>
   
     </>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import './SuperCoins.css'; 
 
 const SuperCoin = () => {
     const [superCoins, setSuperCoins] = useState(0);
+    
     const cartItems = useSelector(state => state.cart.cartItems);
     const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
