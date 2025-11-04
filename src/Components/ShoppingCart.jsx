@@ -39,7 +39,7 @@ const ShoppingCart = () => {
             </li>
           ))}
       </ul>
-      <button className="clear-cart-btn">Clear Cart</button>
+      <button className="clear-cart-btn" onClick={() => handleClearCart()}>Clear Cart</button>
     </div>
   
     </>
